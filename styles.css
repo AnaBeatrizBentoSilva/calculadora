@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color:#ffffff;
+
+}
+
+body{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 3em;
+    margin: 0; 
+}
+
+#calc{
+    width: 400px;
+    padding: .5em;
+    background-color: #313131;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#operations{
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation{
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#previous-operation{
+    color: #ffffff;
+}
+
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #ff6c10;
+    cursor: pointer;
+}
+
+#buttons-container .delete{
+    background-color: #2b2b2b;
+}
+
+#buttons-container .number{
+    background-color: #5a5a5a;
+}
+
+#buttons-container button:hover {
+    background-color: #3f3631;
+    border-color: #999;
+}
+
+#buttons-container #equal-btn{
+    /*grid-column: span 2;*/
+    background-color: #ff9310;
+}
+
+#buttons-container #equal-btn:hover{
+    background-color: #3f3631;
+}
